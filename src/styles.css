@@ -1,0 +1,145 @@
+body {
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
+}
+
+h2 {
+  color: #313131;
+}
+
+.description-p {
+  width: 80%;
+  line-height: 1.5rem;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+figure.img-wrapper {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+
+.dash-breaker {
+  border: 1px solid #000;
+}
+
+.item-img {
+  background-color: #ffffff;
+  height: auto;
+  border-radius: 50%;
+  width: auto;
+}
+
+.item-p {
+  display: block;
+  text-align: center;
+}
+
+.text {
+  margin-top: 10%;
+}
+
+.growing-search {
+  padding: 5px 5px 5px 7px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.growing-search div {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.growing-search .input input {
+  margin-right: 0;
+  border: none;
+  font-size: inherit;
+  transition: width 200ms;
+  padding: 5px 5px 5px;
+  width: 55px;
+  color: #aaa;
+  border-bottom: 1px solid #eee;
+}
+
+.growing-search .input input:focus {
+  width: 150px;
+}
+
+.growing-search .submit button {
+  margin-left: 0;
+  border: none;
+  font-size: 1.15em;
+  color: #aaa;
+  background-color: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transition: color 200ms;
+}
+
+.growing-search .input input:hover,
+.growing-search .submit button:hover {
+  cursor: pointer;
+}
+
+.growing-search .input input:focus,
+.growing-search .submit button:focus {
+  outline: none;
+}
+
+.growing-search .submit button:hover {
+  color: #3498db;
+}
+
+ul#growing-search-ul {
+  display: table;
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .map-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .wrapper {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    margin: 15px;
+  }
+
+  h3 {
+    margin: 15px;
+  }
+
+  #growing-search-ul {
+    margin: 15px;
+  }
+
+  .description-p {
+    margin: 15px;
+  }
+
+  .dash-breaker {
+    margin-left: 15px;
+    margin-right: 50px;
+  }
+}
